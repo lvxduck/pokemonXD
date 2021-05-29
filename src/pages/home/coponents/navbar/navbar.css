@@ -1,6 +1,30 @@
+/* -------------- logo ------------- */
+#logo{
+    padding: 8px 0px 8px 86px;
+    height: 100%;
+    box-sizing: border-box;
+    transition: 200ms;
+}
+#app_name{
+    padding-left: 16px;
+    margin: auto;
+    font-size: 20px;
+    color: var(--text);
+    font-weight: bold;
+}
+
+#app_name:hover{
+    color: #ffe62d;
+}
+
+#logo:hover{
+    transform: scale(1.4);
+}
+
+/* -------------- NavBar ------------- */
 .navContainer{
     height: 64px;
-    background-color: var(--darkPrimary);
+    background-color: var(--primary-dark);
     display: flex;
     justify-content: space-around;
 }
@@ -15,23 +39,12 @@
 }
 .navLink:hover{
     background-color: rgba(255, 255, 255, 0.062);
-}
-
-#logo{
-    padding: 8px 64px;
-    height: 100%;
-    box-sizing: border-box;
-    transition: 200ms;
-}
-
-#logo:hover{
-    height: 140%;
-    padding-left: 54px;
+    color: #ffe62d;
 }
 
 .navMenu{
     height: 100%;
-    padding-right: 64px;
+    padding-right: 86px;
     display: flex;
     justify-content: flex-end;
     transition: 500ms;

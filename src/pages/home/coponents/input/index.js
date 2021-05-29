@@ -3,6 +3,14 @@ import { FiSearch } from 'react-icons/fi';
 import Item from './item'
 import './input.css';
 
+const suggestions = [
+    'Pikachu',
+    'Pikachu1',
+    'Pikachu2',
+    'Pikachu3',
+    'Pikachu4',
+    'Pikachu5'
+]
 export default function Input() {
     const [shouldShowSuggestion, setShouldShowSuggestion] = useState(false);
     const inputEl = useRef(null);
@@ -28,27 +36,17 @@ export default function Input() {
                 <div className='iconContainer'>
                     <FiSearch size='20px' color='rgb(173, 173, 173)' />
                 </div>
-
             </div>
             <div id='sugesstion_container'
                 style={ shouldShowSuggestion
-                    // ? {overflowY: 'scroll'}
                     ? {maxHeight: '320px'}
                     : { maxHeight: '0px'}}
                 >
                 <hr id='device' />
                 <div id = 'listItem'>
-                    <Item value='Pika pika' />
-                    <Item value='Pika hehe he' />
-                    <Item value='Pika hehe he' />
-                    <Item value='Pika hehe he' />
-                    <Item value='Pika hehe he' />
-                    <Item value='Pika hehe he' />
-                    <Item value='Mikami' />
-                    <Item value='Mikami' />
-                    <Item value='Mikami' />
-                    <Item value='Pika pika' />
-                    <Item value='Pika pika' />
+                    {suggestions.map(suggestion => 
+                        <Item value={suggestion}/>)
+                    }
                 </div>
                 
             </div>

@@ -1,0 +1,26 @@
+#footer_container{
+    padding: 32px 0px 64px;
+    background-color: var(--primary-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#psy_duck{
+    height: 210px;
+    top: -148px;
+    z-index: -1;
+    position: absolute;
+    left: 120px;
+}
+p{
+    margin: 8px 0px;
+}
+a{
+    text-decoration: none;
+    color: var(--secondary-light);
+}
+a:hover{
+    color: var(--secondary);
+    font-weight: bold;
+}

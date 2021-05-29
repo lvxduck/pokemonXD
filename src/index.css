@@ -1,6 +1,10 @@
 :root {
   --primary: #1a202c;
-  --darkPrimary: #11161f;
+  --primary-dark: #11161f;
+  --primary-light: #11161f;
+  --secondary: #ffe62d;
+  --secondary-dark: #11161f;
+  --secondary-light: #fff18b;
   --text: rgb(224, 224, 224);
 }
 

@@ -15,6 +15,7 @@ export default function NavBar() {
             <NavLink to='/' >
                 <img src={ logo } id='logo'/>
             </NavLink>
+            <span id='app_name'>PokemonXD</span>
             <div className='navResponsive'>
                 <div className='hamburger'>
                 {
@@ -28,7 +29,7 @@ export default function NavBar() {
                         Home
                     </NavLink>
                     <NavLink to='/advance' className='navLink' onClick={ handleNavBar }>
-                        advance
+                        advanced
                     </NavLink>
                     <NavLink to='/about' className='navLink' onClick={ handleNavBar }>
                         About
